@@ -19,4 +19,12 @@ public class MusicHall {
     }
     return sum;
   }
+
+  private int getSumOfStandingPlaces() {
+    int sum = 0;
+    for (Sector sector : sectors) {
+      sum += sector.getStandingPlaces();
+    }
+    return sum;
+  }
 }
