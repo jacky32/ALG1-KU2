@@ -11,4 +11,12 @@ public class MusicHall {
     this.sectors.add(s6);
     this.sectors.add(s7);
   }
+
+  private int getSumOfSeatingPlaces() {
+    int sum = 0;
+    for (Sector sector : sectors) {
+      sum += sector.getSeatingPlaces();
+    }
+    return sum;
+  }
 }
