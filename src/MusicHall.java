@@ -12,7 +12,7 @@ public class MusicHall {
     this.sectors.add(s7);
   }
 
-  private int getSumOfSeatingPlaces() {
+  public int getSumOfSeatingPlaces() {
     int sum = 0;
     for (Sector sector : sectors) {
       sum += sector.getSeatingPlaces();
@@ -20,7 +20,7 @@ public class MusicHall {
     return sum;
   }
 
-  private int getSumOfStandingPlaces() {
+  public int getSumOfStandingPlaces() {
     int sum = 0;
     for (Sector sector : sectors) {
       sum += sector.getStandingPlaces();
@@ -28,7 +28,7 @@ public class MusicHall {
     return sum;
   }
 
-  private int getSumOfSeatingPlaces(String onlyForColor) {
+  public int getSumOfSeatingPlaces(String onlyForColor) {
     int sum = 0;
     for (Sector sector : sectors) {
       if (sector.getColor().equals(onlyForColor)) {
@@ -38,7 +38,7 @@ public class MusicHall {
     return sum;
   }
 
-  private int getSumOfStandingPlaces(String onlyForColor) {
+  public int getSumOfStandingPlaces(String onlyForColor) {
     int sum = 0;
     for (Sector sector : sectors) {
       if (sector.getColor().equals(onlyForColor)) {
@@ -46,5 +46,9 @@ public class MusicHall {
       }
     }
     return sum;
+  }
+
+  public void printInfo() {
+    System.out.println("The music hall has a total of " + this.getSumOfSeatingPlaces() + " seating places and " + this.getSumOfStandingPlaces() + " standing places." );
   }
 }
