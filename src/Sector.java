@@ -22,4 +22,8 @@ public class Sector {
   public String getColor() {
     return this.colorOfSector;
   }
+
+  public void printInfo() {
+    System.out.println(this.colorOfSector + " sector " + this.nameOfSector + " has " + this.seatingPlaces + " places to sit and " + this.standingPlaces + " places to stand.");
+  }
 }
