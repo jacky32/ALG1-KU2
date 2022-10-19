@@ -10,4 +10,16 @@ public class Sector {
     this.seatingPlaces = seatingPlaces;
     this.colorOfSector = colorOfSector;
   }
+
+  public int getStandingPlaces() {
+    return this.standingPlaces;
+  }
+
+  public int getSeatingPlaces() {
+    return this.seatingPlaces;
+  }
+
+  public String getColor() {
+    return this.colorOfSector;
+  }
 }
