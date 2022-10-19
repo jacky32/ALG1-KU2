@@ -27,4 +27,24 @@ public class MusicHall {
     }
     return sum;
   }
+
+  private int getSumOfSeatingPlaces(String onlyForColor) {
+    int sum = 0;
+    for (Sector sector : sectors) {
+      if (sector.getColor().equals(onlyForColor)) {
+        sum += sector.getSeatingPlaces();
+      }
+    }
+    return sum;
+  }
+
+  private int getSumOfStandingPlaces(String onlyForColor) {
+    int sum = 0;
+    for (Sector sector : sectors) {
+      if (sector.getColor().equals(onlyForColor)) {
+        sum += sector.getStandingPlaces();
+      }
+    }
+    return sum;
+  }
 }
